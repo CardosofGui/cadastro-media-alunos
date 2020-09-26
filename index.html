@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando média</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <section id="section-cadastro-alunos">
+    <h2>CALCULANDO MÉDIA</h2>
+    <form action="" id="form-cadastro">
+      <div><input type="text" name="txNome" id="txNome" placeholder="Digite o nome do aluno"></div>
+      <div><input type="number" name="txNota1" id="txNota1" step=".01" placeholder="Nota 1"></div>
+      <div><input type="number" name="txNota2" id="txNota2" step=".01" placeholder="Nota 2"></div>
+      <div><input type="number" name="txNota3" id="txNota3" step=".01" placeholder="Nota 3"></div>
+      <div><input type="number" name="txNota4" id="txNota4" step=".01" placeholder="Nota 4"></div>
+      <div><input type="submit" value="Cadastrar" onclick="cadastrar();"></div>
+    </form>
+    <div id="exibir">
+      <div class="exibir-row">
+        <div class="cell"><span>Nome</span></div>
+        <div class="cell"><span>Nota 1</span></div>
+        <div class="cell"><span>Nota 2</span></div>
+        <div class="cell"><span>Nota 3</span></div>
+        <div class="cell"><span>Nota 4</span></div>
+        <div class="cell"><span>Média</span></div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
+<script src="js/index.js"></script>
