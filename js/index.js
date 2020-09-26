@@ -25,7 +25,12 @@ function cadastrar(){
 
     if(nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <= 10 && nota3 >= 0 && nota3 <= 10 && nota4 >= 0 && nota4 <= 10 && nomeValido){
       media = (nota1+nota2+nota3+nota4)/4;
-      exibir.innerHTML += `<div class="exibir-row"><div class="cell"><span>${nomeAluno}</span></div><div class="cell"><span>${nota1}</span></div><div class="cell"><span>${nota2}</span></div><div class="cell"><span>${nota3}</span></div><div class="cell"><span>${nota4}</span></div><div class="cell"><span>${media}</span></div></div>`;
+      media = media.toFixed(2);
+      if(media >= 5){
+        exibir.innerHTML += `<div class="exibir-row"><div class="cell"><span>${nomeAluno}</span></div><div class="cell"><span>${nota1}</span></div><div class="cell"><span>${nota2}</span></div><div class="cell"><span>${nota3}</span></div><div class="cell"><span>${nota4}</span></div><div class="cell"><span class="media-azul">${media}</span></div></div>`;
+      } else{
+        exibir.innerHTML += `<div class="exibir-row"><div class="cell"><span>${nomeAluno}</span></div><div class="cell"><span>${nota1}</span></div><div class="cell"><span>${nota2}</span></div><div class="cell"><span>${nota3}</span></div><div class="cell"><span>${nota4}</span></div><div class="cell"><span class="media-vermelha">${media}</span></div></div>`;
+      }
     } else{
       alert("Nome E/OU Nota Inválida!");
     }
