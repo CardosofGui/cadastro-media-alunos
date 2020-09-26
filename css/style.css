@@ -26,6 +26,11 @@ body{
   color: cornflowerblue;
   text-decoration: underline;
 }
+#section-cadastro-alunos h2.media{
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+}
 
 #form-cadastro{
   width: 65%;
